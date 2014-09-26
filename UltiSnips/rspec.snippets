@@ -402,4 +402,35 @@ expect do
 end.to ${2:change {${3:subject}}.${4:from($5).to($6)}}
 endsnippet
 
+snippet rspec "RSpec spec"
+require 'spec_helper'
+
+describe ${1:Subject} do
+
+end
+endsnippet
+
+snippet rmodel "RSpec model spec"
+require 'spec_helper'
+
+describe ${1:Model} do
+
+  describe "associations" do
+
+  end
+
+  describe "validations" do
+
+  end
+
+  describe "class methods" do
+
+  end
+
+  describe "instance methods" do
+
+  end
+end
+endsnippet
+
 # vim:ft=rspec.ruby
